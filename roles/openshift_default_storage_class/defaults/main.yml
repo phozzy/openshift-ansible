@@ -17,7 +17,7 @@ openshift_storageclass_defaults:
     name: standard
     provisioner: cinder
     parameters:
-      fstype: xfs
+      fstype: ext4
 
 openshift_storageclass_default: "true"
 openshift_storageclass_name: "{{ openshift_storageclass_defaults[openshift_cloudprovider_kind]['name'] }}"
